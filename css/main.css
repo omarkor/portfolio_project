@@ -5,6 +5,10 @@
 #788B73
 #61554E */
 
+/* varible */
+:root{
+    --main-color :#87E098
+}
 /* globale rule
  */*{
     -webkit-box-sizing: border-box;
@@ -89,6 +93,7 @@ header{
     min-width: 200px;
     top: calc(100% + 15px);
     display: none;
+    z-index: 1;
 }
 .header .links:hover ul{
     display: block;
@@ -111,4 +116,32 @@ header{
 }
 .header .links ul li a:hover {
     padding-left: 25px;
+}
+/* landing page */
+.lending{
+    background-image: url("../images/686998.jpg");
+    height:calc(100vh - 50px);
+    background-size: cover;
+    position: relative;
+}
+.lending .intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 335px;
+    max-width: 100%;
+
+}
+.lending .intro-text h1 {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+}
+.lending .intro-text p  {
+    font-size: 19px;
+    line-height: 1.8;
+    
 }
