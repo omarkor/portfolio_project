@@ -298,3 +298,136 @@ header{
     margin-bottom: 0;
 }
 /* end portfolio page */
+/* start about */
+.about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.about .about-content{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .image{
+    position: relative;
+    width: 250px;
+    height: 375px;
+
+}
+@media (max-width: 991px){
+    .about .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 991px){
+    .about .about-content .image{
+        margin: 0 auto 60px;
+    }
+}
+.about .about-content .image img {
+    width: 250px;
+    height: 375px; 
+    max-width: 100%;
+
+}
+
+.about .about-content .image::before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    bottom: -40ox;
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+
+.about .about-content .image::after {
+    content: "";
+    top: -40px;
+    position: absolute;
+    height: 300px;
+    width: 120px;
+    z-index: -1;
+    border-bottom: 70px solid var(--main-color);
+    border-left: 80px solid var(--main-color);
+    right: -150px;
+}
+@media (max-width: 991px){
+    .about .about-content .image::after,
+    .about .about-content .image::before{
+        display: none;
+    }
+}
+.about .about-content .text{
+    flex-basis: calc(100% - 500px);
+
+}
+.about .about-content .text p:first-of-type{
+    font-weight: 800;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about .about-content .text hr {
+    width: 200px;
+    display: inline-block;
+    border-color: var(--main-color);
+
+}
+.about .about-content .text:last-of-type {
+    line-height: 2;
+    color: #777;
+}
+/* end about */
+/* star contact */
+.contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact .info{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.contact .info .label {
+    font-size: 30px;
+    font-weight: 800;
+    color: #788B73 ;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+
+}
+.contact .info .link{
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+
+}
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+.contact .info .social i{
+    margin-left: 10px;
+    color: #9EFFE0;
+
+}
+.contact .info .social .fa-youtube {
+    color: red;
+}
+.contact .info .social .fa-facebook {
+    color: blue;
+}
+.contact .info .social .fa-x-twitter {
+    color: black;
+}
+/* end contact */
