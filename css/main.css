@@ -15,6 +15,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Work-Sans", "sans-serif";
 }
@@ -47,7 +50,7 @@ img{
 }
 /* start component */
 .special-heading{
-    color: #ebeced;
+    color: #d1d3d5;
     font-size: 100px;
     text-align: center;
     font-weight: 800;
@@ -394,9 +397,9 @@ header{
     text-align: center;
 }
 .contact .info .label {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
-    color: #788B73 ;
+    color: #4a5c45 ;
     letter-spacing: -2px;
     margin-bottom: 15px;
 
@@ -418,8 +421,6 @@ header{
 }
 .contact .info .social i{
     margin-left: 10px;
-    color: #9EFFE0;
-
 }
 .contact .info .social .fa-youtube {
     color: red;
@@ -430,4 +431,24 @@ header{
 .contact .info .social .fa-x-twitter {
     color: black;
 }
+@media (max-width: 767px ){
+    .contact .info .label,
+    .contact .info .link {
+        font-size: 25px;
+    }
+}
 /* end contact */
+/* start footer */
+.footer{
+    background-color: #4a5c45;
+    color: #f3f5f3;
+    text-align: center;
+    font-size: 18px;
+    padding: 30px 18px;
+
+}
+.footer span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* end footer */
